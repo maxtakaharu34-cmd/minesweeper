@@ -111,7 +111,7 @@ function createBoard(rows: number, cols: number, mines: number, safeR: number, s
   return board;
 }
 
-export default function Minesweeper() {
+export default function マインスイーパー() {
   const [difficulty, setDifficulty] = useState<Difficulty>("easy");
   const [board, setBoard] = useState<CellState[][] | null>(null);
   const [gameState, setGameState] = useState<"idle" | "playing" | "won" | "lost">("idle");
@@ -504,7 +504,7 @@ export default function Minesweeper() {
           fontWeight: 900,
           fontSize: 20,
         }}>
-          💥 GAME OVER
+          💥 ゲームオーバー
         </div>
       )}
 
